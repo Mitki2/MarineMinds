@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <title>version 1.0</title>
 
-  <base href="/" />
+  <base href="/MarineMinds/" />
 
   <!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
   <meta name="viewport"
@@ -19,14 +19,14 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
   <!-- Imports an icon to represent the document. -->
-  <link rel="icon" href="/assets/icons/icon_24.png" type="image/x-icon" />
+  <link rel="icon" href="/MarineMinds/assets/icons/icon_24.png" type="image/x-icon" />
 
   <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
-  <link rel="manifest" href="/manifest.json" />
+  <link rel="manifest" href="/MarineMinds/manifest.json" />
 
   <script type="module" src="https://unpkg.com/@fluentui/web-components" crossorigin="anonymous"></script>
 
-  <script type="module" src="/src/app-index.ts"></script>
+  <script type="module" src="/MarineMinds/src/app-index.ts"></script>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register(
-        import.meta.env.MODE === 'production' ? '/sw.js' : '/sw.js?dev-sw'
+        import.meta.env.MODE === 'production' ? '/MarineMinds/sw.js' : '/MarineMinds/sw.js?dev-sw'
       );
     }
   </script>
